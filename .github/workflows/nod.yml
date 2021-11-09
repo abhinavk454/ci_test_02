@@ -31,7 +31,7 @@ jobs:
     - run: npm test
     - run: touch ./out/.nojekyll
     - name: Deploy
-        uses: JamesIves/github-pages-deploy-action
-        with:
-          branch: gh-pages
-          folder: out
+      uses: JamesIves/github-pages-deploy-action@4.1.1
+      with:
+        branch: gh-pages
+        folder: out
